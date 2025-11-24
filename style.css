@@ -1,0 +1,158 @@
+/* --- ESTILOS GERAIS E MODERNOS --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Fonte moderna e limpa */
+    background-color: #0d111c; /* Fundo muito escuro (quase preto) para profundidade */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    color: #e5e5e5; /* Cor base do texto: cinza claro */
+    text-rendering: optimizeLegibility;
+}
+
+.convite-container {
+    width: 100%;
+    max-width: 550px;
+    background: #1c2635; /* Azul escuro suave (o 'preto' moderno) */
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 0 1px #33445c; /* Sombra e borda sutil */
+    transition: transform 0.3s ease-in-out;
+}
+
+.convite-container:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+/* --- CABEÇALHO --- */
+header {
+    margin-bottom: 30px;
+}
+
+.titulo-menor {
+    font-size: 0.9em;
+    color: #6a9cff; /* Azul vibrante como cor de destaque */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+header h1 {
+    font-size: 2.8em;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+/* --- MENSAGEM --- */
+.mensagem {
+    margin: 35px 0;
+    padding: 20px;
+    background-color: #212c3b; /* Fundo sutil para a mensagem */
+    border-radius: 8px;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.para-victoria {
+    font-style: normal;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+
+/* --- DETALHES (Grid) --- */
+.detalhes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 40px 0;
+}
+
+.detalhe-item {
+    padding: 15px 5px;
+    border-radius: 8px;
+    background-color: #151e28;
+}
+
+.detalhe-item .icone {
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.detalhe-item .titulo {
+    font-weight: 700;
+    color: #6a9cff; /* Cor de destaque para títulos */
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 1px;
+}
+
+.detalhe-item p {
+    margin: 0;
+    font-size: 0.95em;
+}
+
+/* --- RODAPÉ E BOTÃO --- */
+footer {
+    margin-top: 40px;
+}
+
+.assinatura {
+    margin-bottom: 25px;
+}
+
+.nome-eu {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.nome-convidada {
+    font-size: 1em;
+    color: #ccc;
+    margin: 5px 0 0 0;
+}
+
+.btn-rsvp {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #6a9cff; /* Cor de destaque (Azul Moderno) */
+    color: #0d111c;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.1s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.btn-rsvp:hover {
+    background-color: #3b74e8; /* Escurece no hover */
+    transform: scale(1.02);
+}
+
+/* --- Responsividade (Celular) --- */
+@media (max-width: 450px) {
+    .convite-container {
+        padding: 30px 20px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    .detalhes {
+        grid-template-columns: 1fr; /* Colunas empilhadas no celular */
+    }
+}
